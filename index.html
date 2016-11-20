@@ -242,7 +242,7 @@ var _hmt = _hmt || [];
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/08-其他/">08-其他</a></h3>
+                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -255,44 +255,13 @@ var _hmt = _hmt || [];
                 <div class="col-md-8">
                     <p>
                       
-                        1.客户端安全性处理方式？1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)2&gt;协议的问题(自定义协议, 游戏代练)3&gt;本地文件存储(游戏的存档)4&gt;源代码
-2.sip是什么？1&gt;SIP（Session Initiation Protocol），会话发起协议2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织3&gt;所谓VOIP，
+                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
+2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/08-其他/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/01-多线程网络/">多线程网络</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        
-多线程的底层实现？1&gt; 首先搞清楚什么是线程、什么是多线程2&gt; Mach是第一个以多线程方式处理任务的系统，因此多线程的底层实现机制是基于Mach的线程3&gt; 开发中很少用Mach级的线程，因为Mach级的线程没有提供多线程的基本特征，线程之间是独立的4&gt; 开发中实现多线程的方案C语言的POSIX接口：#include OC的NSThreadC语言的GCD接口（性能最好，代码更精简）OC的NSOperat
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/01-多线程网络/">更多...</a>
+                        <a href="/2014/06/21/03-Foundation/">更多...</a>
                     </p>
                     
                 </div>
@@ -324,6 +293,38 @@ var _hmt = _hmt || [];
                     
                     <p class="pull-right readMore">
                         <a href="/2014/06/21/04-数据存储/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/05-UI控件/">05-UI控件</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1.怎么解决缓存池满的问题(cell)ios中不存在缓存池满的情况，因为通常我们ios中开发，对象都是在需要的时候才会创建，有种常用的说话叫做懒加载，还有在UITableView中一般只会创建刚开始出现在屏幕中的cell，之后都是从缓存池里取，不会在创建新对象。缓存池里最多也就一两个对象，缓存池满的这种情况一般在开发java中比较常见，java中一般把最近最少使用的对象先释放。
+2.CAAnimation的层级结构
+3.UIButton
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/05-UI控件/">更多...</a>
                     </p>
                     
                 </div>
@@ -399,7 +400,7 @@ var _hmt = _hmt || [];
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/05-UI控件/">05-UI控件</a></h3>
+                    <h3><a href="/2014/06/21/08-其他/">08-其他</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -412,45 +413,13 @@ var _hmt = _hmt || [];
                 <div class="col-md-8">
                     <p>
                       
-                        1.怎么解决缓存池满的问题(cell)ios中不存在缓存池满的情况，因为通常我们ios中开发，对象都是在需要的时候才会创建，有种常用的说话叫做懒加载，还有在UITableView中一般只会创建刚开始出现在屏幕中的cell，之后都是从缓存池里取，不会在创建新对象。缓存池里最多也就一两个对象，缓存池满的这种情况一般在开发java中比较常见，java中一般把最近最少使用的对象先释放。
-2.CAAnimation的层级结构
-3.UIButton
+                        1.客户端安全性处理方式？1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)2&gt;协议的问题(自定义协议, 游戏代练)3&gt;本地文件存储(游戏的存档)4&gt;源代码
+2.sip是什么？1&gt;SIP（Session Initiation Protocol），会话发起协议2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织3&gt;所谓VOIP，
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/05-UI控件/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
+                        <a href="/2014/06/21/08-其他/">更多...</a>
                     </p>
                     
                 </div>
@@ -484,6 +453,37 @@ var _hmt = _hmt || [];
                     
                     <p class="pull-right readMore">
                         <a href="/2014/06/21/内存管理/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/01-多线程网络/">多线程网络</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        
+多线程的底层实现？1&gt; 首先搞清楚什么是线程、什么是多线程2&gt; Mach是第一个以多线程方式处理任务的系统，因此多线程的底层实现机制是基于Mach的线程3&gt; 开发中很少用Mach级的线程，因为Mach级的线程没有提供多线程的基本特征，线程之间是独立的4&gt; 开发中实现多线程的方案C语言的POSIX接口：#include OC的NSThreadC语言的GCD接口（性能最好，代码更精简）OC的NSOperat
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/01-多线程网络/">更多...</a>
                     </p>
                     
                 </div>
