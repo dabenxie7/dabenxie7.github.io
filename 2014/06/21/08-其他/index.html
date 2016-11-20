@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>周玉坤的技术博客</title>
+  <title>08-其他 | 周玉坤的技术博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -191,218 +191,71 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
           2014-06-21
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
-2.SQLite数据存储是怎么用？1&gt;添加SQL
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/04-数据存储/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>08-其他</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
-2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1.客户端安全性处理方式？<br>1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)<br>2&gt;协议的问题(自定义协议, 游戏代练)<br>3&gt;本地文件存储(游戏的存档)<br>4&gt;源代码</p>
+<p>2.sip是什么？<br>1&gt;SIP（Session Initiation Protocol），会话发起协议<br>2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织<br>3&gt;所谓VOIP，就是网络电话，直接用互联网打电话，不用耗手机话费</p>
+<p>3.有些图片加载的比较慢怎么处理?你是怎么优化程序的性能的?<br>1&gt;图片下载放在异步线程<br>2&gt;图片下载过程中使用占位图片<br>3&gt;如果图片较大，可以考虑多线程断点下载</p>
+<p>4.你实现过一个框架或者库以供别人使用么？如果有，请谈一谈构建框架或者库时候的经验；如果没有，请设想和设计框架的public的API，并指出大概需要如何做、需要注意一些什么方面，来使别人容易地使用你的框架。<br>1&gt;提供给外界的接口功能是否实用、够用<br>2&gt;别人使用我的框架时，能不能根据类名、方法名就猜出接口的具体作用<br>3&gt;别人调用接口时，提供的参数是否够用、调用起来是否简单<br>4&gt;别人使用我的框架时，要不要再导入依赖其他的框架</p>
+<p>5.App需要加载超大量的数据，给服务器发送请求，但是服务器卡住了如何解决？<br>1&gt;设置请求超时<br>2&gt;给用户提示请求超时<br>3&gt;根据用户操作再次请求数据</p>
+<p>6.利用NSNotificationCenter实现跨多控制器传输数据和消息中用同步还是异步？</p>
+<p>7.如何编写xml</p>
+<p>8.地图导航不能用了怎么办<br>提示用户打开导航定位功能</p>
+<p>9.SDWebImage具体如何实现<br>1&gt;利用NSOperationQueue和NSOperation下载图片, 还使用了GCD的一些函数(解码GIF图片)<br>2&gt;利用URL作为key，NSOperation作为value<br>3&gt;利用URL作为key，UIImage作为value</p>
+<p>10.AFN 与 ASI 有什么区别<br>1&gt;AFN基于NSURL，ASI基于底层的CFNetwork框架，因此ASI的性能优于AFN<br>2&gt;AFN采取block的方式处理请求，ASI最初采取delegate的方式处理请求，后面也增加了block的方式<br>3&gt;AFN只封装了一些常用功能，满足基本需求，直接忽略了很多扩展功能，比如没有封装同步请求；ASI提供的功能较多，预留了各种接口和工具供开发者自行扩展<br>4&gt;AFN直接解析服务器返回的JSON、XML等数据，而ASI比较原始，返回的是NSData二进制数据</p>
+<p>11.你在实际开发中，有哪些手机架构与性能调试经验<br>1&gt;刚接手公司的旧项目时，模块特别多，而且几乎所有的代码都写在控制器里面，比如UI控件代码、网络请求代码、数据存储代码<br>2&gt;接下来采取MVC模式进行封装、重构<br>自定义UI控件封装内部的业务逻辑<br>封装网络请求工具类<br>封装数据存储工具类</p>
+<p>12.runloop定时源和输入源<br>1&gt;你创建的程序不需要显示的创建run loop；每个线程，包括程序的主线程（main thread）都有与之相应的run loop对象, 主线程会自行创建并运行run loop<br>2&gt;Run loop处理的输入事件有两种不同的来源：输入源（input source）和定时源（timer source）<br>3&gt;输入源传递异步消息，通常来自于其他线程或者程序。定时源则传递同步消息，在特定时间或者一定的时间间隔发生</p>
+<p>13.你们项目中都用了哪些框架, 及何种开发工具,具体到是哪个版本,这个版本的特性有哪些???(比如xcode的版本)<br>1&gt;AFN、SDWebImage、MBProgressHUD等 (搜索: 网易新闻 第三方库)<br>2&gt;Xcode 5.0</p>
+<p>14.自己怎么实现原子锁<br>iOS中一般用nonaotomic</p>
+<p>15.运行时的内部实现</p>
+<p>16.即时通讯中的大数据处理<br>用put上传到文件服务器，然后发带url的自定义格式的给对方，对方接收到之后下载</p>
+<p>17.json解析的具体实现<br>1&gt;SBJson<br>2&gt;JSONKit<br>3&gt;NSJSONSerialization</p>
+<p>18.如果在网络数据处理过程中,发现一处比较卡,一般怎么解决<br>1&gt;检查网络请求操作是否被放在主线程了<br>2&gt;看看异步请求的数量是否太多了（子线程数量）<br>3&gt;数据量是否太大？如果太大，先清除一些不必要的对象（看不见的数据、图片）<br>4&gt;手机CPU使用率和内存问题</p>
+<p>19.怎么介绍一个项目<br>1&gt;项目的价值（可以加些“老板”关键字）<br>2&gt;项目的模块<br>3&gt;我做的是哪个模块</p>
+<p>20.怎么解决sqlite锁定的问题<br>1&gt;设置数据库锁定的处理函数<br>int sqlite3_busy_handler(sqlite3<em>, int(</em>)(void<em>,int), void</em>);<br>2&gt;设定锁定时的等待时间<br>int sqlite3_busy_timeout(sqlite3*, 60); ：</p>
 
-声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/内存管理/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/30/CSS属性/">HTML5基本标签</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-30T06:39:03.000Z" itemprop="datePublished">
-          2013-07-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        CSS有N多属性，根据继承性，主要可以分为2大类可继承属性父标签的属性值会传递给子标签一般是文字控制属性
-不可继承属性父标签的属性值不能传递给子标签一般是区块控制属性
-CSS属性 – 可继承属性（红色表示常用）
-所有标签可继承visibility、cursor
-内联标签可继承letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-si
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/30/CSS属性/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/29/HTML标签类型/">HTML标签类型</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-29T07:56:31.000Z" itemprop="datePublished">
-          2013-07-29
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        HTML有N多标签，根据显示的类型，主要可以分为3大类块级标签独占一行的标签能随时设置宽度和高度（比如div、p、h1、h2、ul、li）
-行内标签（内联标签）多个行内标签能同时显示在一行宽度和高度取决于内容的尺寸（比如span、a、label）
-行内-块级标签（内联-块级标签）多个行内-块级标签可以显示在同一行能随时设置宽度和高度（比如input、button）
-修改标签的显示类型
-CSS中有个display属性，能修改标签的显示类型
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/29/HTML标签类型/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
-          <a class="pull-left" href="/">← Newer Posts</a>
-          <a class="pull-right" href="/page/3/">Older Posts →</a>
-        </nav>
+    
+    
+    <a class="pull-right" href="/2014/06/21/01-多线程网络/">
+        多线程网络 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/06/21/08-其他/" data-title="08-其他" data-url="http://yoursite.com/2014/06/21/08-其他/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->

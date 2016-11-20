@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>周玉坤的技术博客</title>
+  <title>05-UI控件 | 周玉坤的技术博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -191,218 +191,72 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
           2014-06-21
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
-2.SQLite数据存储是怎么用？1&gt;添加SQL
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/04-数据存储/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>05-UI控件</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
-2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1.怎么解决缓存池满的问题(cell)<br>ios中不存在缓存池满的情况，因为通常我们ios中开发，对象都是在需要的时候才会创建，有种常用的说话叫做懒加载，还有在UITableView中一般只会创建刚开始出现在屏幕中的cell，之后都是从缓存池里取，不会在创建新对象。缓存池里最多也就一两个对象，缓存池满的这种情况一般在开发java中比较常见，java中一般把最近最少使用的对象先释放。</p>
+<p>2.CAAnimation的层级结构</p>
+<p>3.UIButton与UITableView的层级结构<br>1&gt;继承结构<br>2&gt;内部的子控件结构</p>
+<p>4.如何渲染自定义格式字符串的UILabel<br>1&gt; 通过NSAttributedString类</p>
+<p>5.设置scroll view的contensize能在Viewdidload里设置么,为什么<br>1&gt; 能</p>
+<p>6.按钮或者其它UIView控件的事件传递的具体过程<br>1&gt; 回顾事件处理课程即可</p>
+<p>7.控制器View的生命周期及相关函数是什么？你在开发中是如何用的？</p>
+<ul>
+<li>1.首先判断控制器是否有视图，如果没有就调用loadView方法创建：通过storyboard或者代码；</li>
+<li>2.随后调用viewDidLoad，可以进行下一步的初始化操作；只会被调用一次；</li>
+<li>3.在视图显示之前调用viewWillAppear；该函数可以多次调用；</li>
+<li><p>4.视图viewDidAppear </p>
+</li>
+<li><p>3.在视图显示之前调用viewWillDisappear；该函数可以多次调用；<br>如需要）；</p>
+</li>
+<li>5.在布局变化前后，调用viewWill/DidLayoutSubviews处理相关信息；</li>
+</ul>
 
-声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/内存管理/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/30/CSS属性/">HTML5基本标签</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-30T06:39:03.000Z" itemprop="datePublished">
-          2013-07-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        CSS有N多属性，根据继承性，主要可以分为2大类可继承属性父标签的属性值会传递给子标签一般是文字控制属性
-不可继承属性父标签的属性值不能传递给子标签一般是区块控制属性
-CSS属性 – 可继承属性（红色表示常用）
-所有标签可继承visibility、cursor
-内联标签可继承letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-si
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/30/CSS属性/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/29/HTML标签类型/">HTML标签类型</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-29T07:56:31.000Z" itemprop="datePublished">
-          2013-07-29
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        HTML有N多标签，根据显示的类型，主要可以分为3大类块级标签独占一行的标签能随时设置宽度和高度（比如div、p、h1、h2、ul、li）
-行内标签（内联标签）多个行内标签能同时显示在一行宽度和高度取决于内容的尺寸（比如span、a、label）
-行内-块级标签（内联-块级标签）多个行内-块级标签可以显示在同一行能随时设置宽度和高度（比如input、button）
-修改标签的显示类型
-CSS中有个display属性，能修改标签的显示类型
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/29/HTML标签类型/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
-          <a class="pull-left" href="/">← Newer Posts</a>
-          <a class="pull-right" href="/page/3/">Older Posts →</a>
-        </nav>
+    
+    <a class="pull-left" href="/2014/06/21/01-多线程网络/" style="float: left;">
+        ← 多线程网络
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/06/21/06-应用程序/">
+        06-应用程序 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/06/21/05-UI控件/" data-title="05-UI控件" data-url="http://yoursite.com/2014/06/21/05-UI控件/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->

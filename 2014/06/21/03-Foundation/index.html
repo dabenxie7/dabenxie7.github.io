@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>周玉坤的技术博客</title>
+  <title>03-Foundation | 周玉坤的技术博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -191,218 +191,74 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
           2014-06-21
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
-2.SQLite数据存储是怎么用？1&gt;添加SQL
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/04-数据存储/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>03-Foundation</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
-2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1.KVO内部实现原理<br>1&gt;KVO是基于runtime机制实现的<br>2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。<br>派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）</p>
+<p>2.是否可以把比较耗时的操作放在NSNotificationCenter中<br>如果在异步线程发的通知，那么可以执行比较耗时的操作；<br>如果在主线程发的通知，那么就不可以执行比较耗时的操作</p>
+<p>3．Foundation对象与Core Foundation对象有什么区别<br>1&gt; Foundation对象是OC的，Core Foundation对象是C对象<br>2&gt; 数据类型之间的转换<br>ARC:<strong>bridge_retained、</strong>bridge_transfer<br>非ARC: __bridge</p>
+<p>4．不用中间变量,用两种方法交换A和B的值<br>A = A + B<br>B = A - B<br>A = A - B<br>或者<br>A = A^B;<br>B = A^B;<br>A = A^B;</p>
+<p>5．简单描述下对单利模式设计的理解？<br>节省内存资源，一个应用就一个对象。</p>
+<p>6．什么是动态，举例说明<br>1&gt; 在程序运行过程才执行的操作</p>
+<p>7．runtime实现的机制是什么,怎么用，一般用于干嘛. 你还能记得你所使用的相关的头文件或者某些方法的名称吗？<br>运行时机制，runtime库里面包含了跟类、成员变量、方法相关的API，比如获取类里面的所有成员变量，为类动态添加成员变量，动态改变类的方法实现，为类动态添加新的方法等 需要导入<objc message.h=""><objc runtime.h=""><br>1&gt;runtime，运行时机制，它是一套C语言库<br>2&gt;实际上我们编写的所有OC代码，最终都是转成了runtime库的东西，比如类转成了runtime库里面的结构体等数据类型，方法转成了runtime库里面的C语言函数，平时调方法都是转成了objc_msgSend函数（所以说OC有个消息发送机制）<br>3&gt;因此，可以说runtime是OC的底层实现，是OC的幕后执行者<br>4&gt;有了runtime库，能做什么事情呢？runtime库里面包含了跟类、成员变量、方法相关的API，比如获取类里面的所有成员变量，为类动态添加成员变量，动态改变类的方法实现，为类动态添加新的方法等<br>5&gt;因此，有了runtime，想怎么改就怎么改</objc></objc></p>
+<p>8．是否使用Core Text或者Core Image等？如果使用过，请谈谈你使用Core Text或者Core Image的体验。<br>CoreText<br>•随意修改文本的样式<br>•图文混排(纯C语言)<br>•国外:Niumb<br>Core Image(滤镜处理)</p>
+<ul>
+<li>能调节图片的各种属性(对比度, 色温, 色差等)</li>
+</ul>
+<p>9．NSNotification和KVO的区别和用法是什么？什么时候应该使用通知，什么时候应该使用KVO，它们的实现上有什么区别吗？如果用protocol和delegate（或者delegate的Array）来实现类似的功能可能吗？如果可能，会有什么潜在的问题？如果不能，为什么？（虽然protocol和delegate这种东西面试已经面烂了…）<br>通知比较灵活(1个通知能被多个对象接收, 1个对象能接收多个通知), </p>
+<p>代理比较规范，但是代码多(默认是1对1)</p>
+<p>KVO性能不好(底层会动态产生新的类)，只能监听某个对象属性的改变, 不推荐使用(1个对象的属性能被多个对象监听,  1个对象能监听多个对象的其他属性)</p>
+<p>更详细参考：<br><a href="http://blog.csdn.net/dqjyong/article/details/7685933" target="_blank" rel="external">http://blog.csdn.net/dqjyong/article/details/7685933</a></p>
+<p>10．Block内部的实现原理<br>Objective-C是对C语言的扩展，block的实现是基于指针和函数指针</p>
+<ol>
+<li>有两个数组a,b，大小都为n,数组元素的值任意，无序；<br>要求：通过交换a,b中的元素，使数组a元素的和与数组b元素的和之间的差最小<br>算法题，要么靠功底，要么百度</li>
+</ol>
 
-声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/内存管理/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/30/CSS属性/">HTML5基本标签</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-30T06:39:03.000Z" itemprop="datePublished">
-          2013-07-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        CSS有N多属性，根据继承性，主要可以分为2大类可继承属性父标签的属性值会传递给子标签一般是文字控制属性
-不可继承属性父标签的属性值不能传递给子标签一般是区块控制属性
-CSS属性 – 可继承属性（红色表示常用）
-所有标签可继承visibility、cursor
-内联标签可继承letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-si
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/30/CSS属性/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/29/HTML标签类型/">HTML标签类型</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-29T07:56:31.000Z" itemprop="datePublished">
-          2013-07-29
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        HTML有N多标签，根据显示的类型，主要可以分为3大类块级标签独占一行的标签能随时设置宽度和高度（比如div、p、h1、h2、ul、li）
-行内标签（内联标签）多个行内标签能同时显示在一行宽度和高度取决于内容的尺寸（比如span、a、label）
-行内-块级标签（内联-块级标签）多个行内-块级标签可以显示在同一行能随时设置宽度和高度（比如input、button）
-修改标签的显示类型
-CSS中有个display属性，能修改标签的显示类型
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/29/HTML标签类型/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
-          <a class="pull-left" href="/">← Newer Posts</a>
-          <a class="pull-right" href="/page/3/">Older Posts →</a>
-        </nav>
+    
+    <a class="pull-left" href="/2014/06/21/04-数据存储/" style="float: left;">
+        ← 04-数据存储
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/06/21/内存管理/">
+        02-内存管理 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/06/21/03-Foundation/" data-title="03-Foundation" data-url="http://yoursite.com/2014/06/21/03-Foundation/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
