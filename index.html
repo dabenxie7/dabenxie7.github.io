@@ -218,11 +218,11 @@ var _hmt = _hmt || [];
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/01-多线程网络/">多线程网络</a></h3>
+                    <h3><a href="/2016/11/24/00-js语法-数据类型/"></a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
+      <time datetime="2016-11-24T14:53:14.000Z" itemprop="datePublished">
+          2016-11-24
       </time>
     
 </span>
@@ -231,13 +231,16 @@ var _hmt = _hmt || [];
                 <div class="col-md-8">
                     <p>
                       
-                        
-多线程的底层实现？1&gt; 首先搞清楚什么是线程、什么是多线程2&gt; Mach是第一个以多线程方式处理任务的系统，因此多线程的底层实现机制是基于Mach的线程3&gt; 开发中很少用Mach级的线程，因为Mach级的线程没有提供多线程的基本特征，线程之间是独立的4&gt; 开发中实现多线程的方案C语言的POSIX接口：#include OC的NSThreadC语言的GCD接口（性能最好，代码更精简）OC的NSOperat
+                        JS语法
+title: 00-js语法-数据类型date: 2014-07-29 16:07:31
+tage:面试题1.介绍javascript，对着ppt
+2,介绍js在浏览器上的操作  动态的添加一些东西  js写服务器代码—NodeJS  为甚以前不行？  没有解析器。利用Google的V8的引擎开发了NodeJS  分析下用js写服务器代码的前景
+3、JS的编写形式  用js写一个helloWord  alert(“hello 
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/01-多线程网络/">更多...</a>
+                        <a href="/2016/11/24/00-js语法-数据类型/">更多...</a>
                     </p>
                     
                 </div>
@@ -249,7 +252,7 @@ var _hmt = _hmt || [];
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
+                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -262,15 +265,13 @@ var _hmt = _hmt || [];
                 <div class="col-md-8">
                     <p>
                       
-                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
-2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
-
-声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
+                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
+2.SQLite数据存储是怎么用？1&gt;添加SQL
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/内存管理/">更多...</a>
+                        <a href="/2014/06/21/04-数据存储/">更多...</a>
                     </p>
                     
                 </div>
@@ -303,37 +304,6 @@ var _hmt = _hmt || [];
                     
                     <p class="pull-right readMore">
                         <a href="/2014/06/21/05-UI控件/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
-2.SQLite数据存储是怎么用？1&gt;添加SQL
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/04-数据存储/">更多...</a>
                     </p>
                     
                 </div>
@@ -460,6 +430,70 @@ var _hmt = _hmt || [];
                     
                     <p class="pull-right readMore">
                         <a href="/2014/06/21/08-其他/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/01-多线程网络/">多线程网络</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        
+多线程的底层实现？1&gt; 首先搞清楚什么是线程、什么是多线程2&gt; Mach是第一个以多线程方式处理任务的系统，因此多线程的底层实现机制是基于Mach的线程3&gt; 开发中很少用Mach级的线程，因为Mach级的线程没有提供多线程的基本特征，线程之间是独立的4&gt; 开发中实现多线程的方案C语言的POSIX接口：#include OC的NSThreadC语言的GCD接口（性能最好，代码更精简）OC的NSOperat
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/01-多线程网络/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
+2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+
+声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/内存管理/">更多...</a>
                     </p>
                     
                 </div>
@@ -678,38 +712,6 @@ CSS的编写格式是键值对形式的，比如color: red;background-color: blu
                     
                     <p class="pull-right readMore">
                         <a href="/2013/07/25/什么是CSS/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2013/07/24/HTML5新增标签/">HTML5新增标签</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2013-07-24T01:59:31.000Z" itemprop="datePublished">
-          2013-07-24
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                         HTML5新增了27个标签元素,废弃了16个标签元素,主要包括结构性标签、级块性标签、行内语义性标签、交互性标签
-1.结构性标签负责Web上下文结构的定义，确保HTML文档，包括：article  文章主体内容(一篇博客、一篇论坛帖子、一段用户评论、插件)header   标记头部区域内容footer   标记脚部区域内容section  区域章节表述nav      菜单导航,链接导航
-2.块级性标签完成Web页面区域的划分，确保内
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2013/07/24/HTML5新增标签/">更多...</a>
                     </p>
                     
                 </div>

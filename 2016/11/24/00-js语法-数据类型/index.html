@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>多线程网络 | 周玉坤的技术博客</title>
+  <title>周玉坤的技术博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -186,59 +186,97 @@ var _hmt = _hmt || [];
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
+      <time datetime="2016-11-24T14:53:14.000Z" itemprop="datePublished">
+          2016-11-24
       </time>
     
 </span>
-                <h1>多线程网络</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<ol>
-<li>多线程的底层实现？<br>1&gt; 首先搞清楚什么是线程、什么是多线程<br>2&gt; Mach是第一个以多线程方式处理任务的系统，因此多线程的底层实现机制是基于Mach的线程<br>3&gt; 开发中很少用Mach级的线程，因为Mach级的线程没有提供多线程的基本特征，线程之间是独立的<br>4&gt; 开发中实现多线程的方案<br>C语言的POSIX接口：#include <pthread.h><br>OC的NSThread<br>C语言的GCD接口（性能最好，代码更精简）<br>OC的NSOperation和NSOperationQueue（基于GCD）</pthread.h></li>
-</ol>
-<p>2．线程间怎么通信？<br>1&gt; performSelector:onThread:withObject:waitUntilDone:<br>2&gt; NSMachPort</p>
-<p>3．网络图片处理问题中怎么解决一个相同的网络地址重复请求的问题？<br>利用字典（图片地址为key，下载操作为value）</p>
-<p>4．用NSOpertion和NSOpertionQueue处理A,B,C三个线程,要求执行完A,B后才能执行C,怎么做？<br>// 创建队列<br>NSOperationQueue *queue = [[NSOperationQueue alloc] init];</p>
-<p>// 创建3个操作<br>NSOperation <em>a = [NSBlockOperation blockOperationWithBlock:^{<br>NSLog(@”operation1—“);<br>}];<br>NSOperation </em>b = [NSBlockOperation blockOperationWithBlock:^{<br>NSLog(@”operation1—“);<br>}];<br>NSOperation *c = [NSBlockOperation blockOperationWithBlock:^{<br>NSLog(@”operation1—“);<br>}];</p>
-<p>// 添加依赖<br>[c addDependency:a];<br>[c addDependency:b];</p>
-<p>// 执行操作<br>[queue addOperation:a];<br>[queue addOperation:b];<br>[queue addOperation:c];</p>
-<p>5．列举cocoa中常见对几种多线程的实现，并谈谈多线程安全的几种解决办法及多线程安全怎么控制？<br>1&gt; 只在主线程刷新访问UI<br>2&gt; 如果要防止资源抢夺，得用synchronized进行加锁保护<br>3&gt; 如果异步操作要保证线程安全等问题, 尽量使用GCD(有些函数默认就是安全的)</p>
-<p>6．GCD内部怎么实现的<br>1&gt; iOS和OS X的核心是XNU内核，GCD是基于XNU内核实现的<br>2&gt; GCD的API全部在libdispatch库中<br>3&gt; GCD的底层实现主要有Dispatch Queue和Dispatch Source<br>Dispatch Queue ：管理block(操作)<br>Dispatch Source ：处理事件</p>
-<ol>
-<li>你用过NSOperationQueue么？如果用过或者了解的话，你为什么要使用NSOperationQueue，实现了什么？请描述它和GCD的区别和类似的地方（提示：可以从两者的实现机制和适用范围来描述）。<br>1&gt; GCD是纯C语言的API，NSOperationQueue是基于GCD的OC版本封装<br>2&gt; GCD只支持FIFO的队列，NSOperationQueue可以很方便地调整执行顺序、设置最大并发数量<br>3&gt; NSOperationQueue可以在轻松在Operation间设置依赖关系，而GCD需要写很多的代码才能实现<br>4&gt; NSOperationQueue支持KVO，可以监测operation是否正在执行（isExecuted）、是否结束（isFinished），是否取消（isCanceld）<br>5&gt; GCD的执行速度比NSOperationQueue快</li>
-</ol>
-<p>任务之间不太互相依赖：GCD<br>任务之间有依赖\或者要监听任务的执行情况：NSOperationQueue</p>
-<ol>
-<li>既然提到GCD，那么问一下在使用GCD以及block时要注意些什么？它们两是一回事儿么？block在ARC中和传统的MRC中的行为和用法有没有什么区别，需要注意些什么？<br>Block的使用注意：<br>1&gt;block的内存管理<br>2&gt;防止循环retian<br>非ARC（MRC）：<strong>block<br>ARC：</strong>weak__unsafe_unretained</li>
-</ol>
-<p>9．在异步线程中下载很多图片,如果失败了,该如何处理?请结合RunLoop来谈谈解决方案.(提示:在异步线程中启动一个RunLoop重新发送网络请求,下载图片)<br>1&gt; 重新下载图片<br>2&gt; 下载完毕, 利用RunLoop的输入源回到主线程刷新UIImageVIUew</p>
-<ol>
-<li><p>Socket的实现原理及Socket之间是如何通信的</p>
+      		<h3 id="JS语法"><a href="#JS语法" class="headerlink" title="JS语法"></a>JS语法</h3><hr>
+<p>title: 00-js语法-数据类型<br>date: 2014-07-29 16:07:31</p>
+<h2 id="tage-面试题"><a href="#tage-面试题" class="headerlink" title="tage:面试题"></a>tage:面试题</h2><p>1.介绍javascript，对着ppt</p>
+<p>2,介绍js在浏览器上的操作<br>  动态的添加一些东西<br>  js写服务器代码—NodeJS<br>  为甚以前不行？<br>  没有解析器。利用Google的V8的引擎开发了NodeJS<br>  分析下用js写服务器代码的前景</p>
+<p>3、JS的编写形式<br>  用js写一个helloWord<br>  alert(“hello world”)</p>
+<p>  利于调试：<br>  console.log(‘hello world’)<br>  比较下alter和console在调试的优缺点<br>  进百度—-&gt; console.log 招聘信息</p>
+<p>4、js的基本语法</p>
+<ul>
+<li>数据类型</li>
+<li>函数</li>
+<li><p>对象<br>—–创建代码<br>(1)<br>var age = 10; //number<br>var money = 10.5; // number<br>var name = “jack”; // string<br>var name2 = ‘rose’; // boolean<br>*推荐使用单引号<br> <button onclick="alter(" 10")"=""><br> var result = true; // true false</button></p>
+<ul>
+<li>可以不写var</li>
+</ul>
+<p>打印类型，加深印象：<br>console.log(typeof age)</p>
 </li>
-<li><p>http协议的实现</p>
-</li>
-</ol>
+</ul>
+<p>(2)字符串的拼接<br>   var prefix = ‘I am’;<br>   var name = ‘jack’<br>   var str = prefix + name + ‘sb’ + 20;</p>
+<p>(3) 字符串与数字拼接<br>   出题：<br>    var str1 = 10 + 10 + ‘10’;<br>    var str2 = ‘10’ + 10 + 10;<br>    var str3 = ‘10’ + （10 + 10）<br>    var str4 =  10 + ‘10’ + ‘10’<br>    注意点：运算从左往右，任何类型与字符串相加都是字符串类型</p>
+<p>（4）数组<br>    var names = []; // 比较下js和oc和java的数组区别<br>    var names = [10, 20, ‘jack’, 10.8, true, false];<br>    console.log(names.length)<br>    console.log(names[0])<br>    console.log(typeof names)</p>
+<pre><code>var dog = {
+   name : &apos;jack&apos;,
+   age : 10
+};
+console.log(dog.name)
+console.log(dog.name + &apos;-&apos; + dog.age)
+
+var dog2 = {
+   name : &apos;hhh&apos;,
+   age  : 10,
+   height : 1.55  (身高已经超过郭敬明了)
+};
+console.log ....
+</code></pre><p>  （5）函数<br>    *函数的定义格式<br>    function 函数名（参数列表）{<br>        // 函数体  </p>
+<pre><code>    函数没有返回类型
+}
+js中定义变量必须用var
+// 加法运算
+function sum(num1, num2){  // 参数列表不需要标明类型
+   return num1 + num2
+}
+cosole.log(sum(1, 2))
+
+// 写一个万能的加法函数
+ 对比前面一个，突出新方法
+ function sum(numbers){
+    var count = 0;
+    for(var i = 0; i &lt; numbers.count; i++){
+        count += numbers[i];
+    }
+    return count;
+ }
+ // 改进版
+ function sum(){ // arguments
+    var count = 0;
+    for (var i = 0; i &lt; arguments.length; i++){
+       count += arguments[i];
+    }  
+    return count
+ }
+
+ 总结：js非常灵活，有很多写法，其他语言办不到
+</code></pre><ul>
+<li>数据类型<br>number:包括所有的数字（整数、小数）<br>boolean:正常取值（true 或者 false）<br>string: 字符串，可以用双引号和单引号引住内容（建议使用单引号）<br>object: 对象类型，（注意：数组[]也是对象类型）、{}</li>
+<li>函数</li>
+<li>对象</li>
+</ul>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2014/06/21/08-其他/" style="float: left;">
-        ← 08-其他
-    </a>
     
-    
-    <a class="pull-right" href="/2014/06/21/内存管理/">
-        02-内存管理 →
+    <a class="pull-right" href="/2014/06/21/04-数据存储/">
+        04-数据存储 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2014/06/21/01-多线程网络/" data-title="多线程网络" data-url="http://yoursite.com/2014/06/21/01-多线程网络/"></div>
+<div class="ds-thread" data-thread-key="2016/11/24/00-js语法-数据类型/" data-title="" data-url="http://yoursite.com/2016/11/24/00-js语法-数据类型/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"dabenxie7"};
 (function() {
