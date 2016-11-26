@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>06-应用程序 | 周玉坤的技术博客</title>
+  <title>02-js语法-window | 周玉坤的技术博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -186,71 +186,34 @@ var _hmt = _hmt || [];
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
+      <time datetime="2014-07-31T11:47:31.000Z" itemprop="datePublished">
+          2014-07-31
       </time>
     
 </span>
-                <h1>06-应用程序</h1>
+                <h1>02-js语法-window</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>1．NSRunLoop的实现机制,及在多线程中如何使用<br>NSRunLoop是IOS消息机制的处理模式</p>
-<blockquote>
-<p>1.NSRunLoop的主要作用：控制NSRunLoop里面线程的执行和休眠，在有事情做的时候使当前NSRunLoop控制的线程工作，没有事情做让当前NSRunLoop的控制的线程休眠。<br>2.NSRunLoop 就是一直在循环检测，从线程start到线程end，检测inputsource(如点击，双击等操作)异步事件，检测timesource同步事件，检测到输入源会执行处理函数，首先会产生通知，corefunction向线程添加runloop observers来监听事件，意在监听事件发生时来做处理。<br>3.runloopmode是一个集合，包括监听：事件源，定时器，以及需通知的runloop observers</p>
-<ol>
-<li>只有在为你的程序创建次线程的时候，才需要运行run loop。对于程序的主线程而言，run loop是关键部分。Cocoa提供了运行主线程run loop的代码同时也会自动运行run loop。IOS程序UIApplication中的run方法在程序正常启动的时候就会启动run loop。如果你使用xcode提供的模板创建的程序，那你永远不需要自己去启动run loop</li>
-<li>在多线程中，你需要判断是否需要run loop。如果需要run loop，那么你要负责配置run loop并启动。你不需要在任何情况下都去启动run loop。比如，你使用线程去处理一个预先定义好的耗时极长的任务时，你就可以毋需启动run loop。Run loop只在你要和线程有交互时才需要</li>
-</ol>
-</blockquote>
-<p>2．IOS7之前,后台执行内容有几种形式,都是什么<br>一般的应用在进入后台的时候可以获取一定时间来运行相关任务，也就是说可以在后台运行一小段时间(10S左右)。</p>
-<ol>
-<li>后台播放音乐</li>
-<li>后台GPS跟踪</li>
-<li>后台voip支持</li>
-</ol>
-<p>3简单说一下APP的启动过程,从main文件开始说起<br>    程序启动分为两类:1.有storyboard 2.没有storyboard<br>有storyboard情况下:<br>1.main函数<br>2.UIApplicationMain</p>
-<ul>
-<li>创建UIApplication对象</li>
-<li>创建UIApplication的delegate对象<br>3.根据Info.plist获得最主要storyboard的文件名,加载最主要的storyboard(有storyboard)</li>
-<li>创建UIWindow</li>
-<li>创建和设置UIWindow的rootViewController</li>
-<li>显示窗口</li>
-</ul>
-<p>没有storyboard情况下:<br>1.main函数<br>2.UIApplicationMain</p>
-<ul>
-<li>创建UIApplication对象</li>
-<li>创建UIApplication的delegate对象<br>3.delegate对象开始处理(监听)系统事件(没有storyboard)</li>
-<li>程序启动完毕的时候, 就会调用代理的application:didFinishLaunchingWithOptions:方法</li>
-<li>在application:didFinishLaunchingWithOptions:中创建UIWindow</li>
-<li>创建和设置UIWindow的rootViewController</li>
-<li>显示窗口</li>
-</ul>
-<p>4把程序自己关掉和程序进入后台,远程推送的区别</p>
-<ol>
-<li>关掉后不执行任何代码, 不能处理事件</li>
-<li>应用程序进入后台状态不久后转入挂起状态。在这种状态下，应用程序不执行任何代码，并有可能在任意时候从内存中删除。只有当用户再次运行此应用，应用才会从挂起状态唤醒，代码得以继续执行<br>3.或者进入后台时开启多任务状态，保留在内存中，这样就可以执行系统允许的动作<br>4.远程推送是由远程服务器上的程序发送到APNS,再由APNS把消息推送至设备上的程序,当应用程序收到推送的消息会自动调用特定的方法执行事先写好的代码</li>
-</ol>
-<p>5本地通知和远程推送通知对基本概念和用法？<br>    本地通知和远程推送通知都可以向不在前台运行的应用发送消息,这种消息既可能是即将发生的事件,也可能是服务器的新数据.不管是本地通知还是远程通知,他们在程序界面的显示效果相同,都可能显示为一段警告信息或应用程序图标上的微章.<br>    本地通知和远程推送通知的基本目的都是让应用程序能够通知用户某些事情, 而且不需要应用程序在前台运行.二者的区别在于本地通知由本应用负责调用,只能从当前设备上的iOS发出, 而远程通知由远程服务器上的程序发送到APNS,再由APNS把消息推送至设备上的程序</p>
-
+      		<h2 id="JS语法"><a href="#JS语法" class="headerlink" title="JS语法"></a>JS语法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line">要想把我们学习的JS运用到iOS开发中，我们还需要学习两个知识点：</div><div class="line">两个内置对象：系统自带的对象，全局对象</div><div class="line">// 内置对象：window 和 document</div><div class="line"></div><div class="line">1.window的特点：</div><div class="line">  1&gt; 所有全局变量都是它的属性；</div><div class="line">  2&gt; 所有全局函数都是它的函数；</div><div class="line">  </div><div class="line">  var age = 20;</div><div class="line">  </div><div class="line">  function run()&#123;</div><div class="line">    var age = 20;&lt;!--局部变量--&gt;</div><div class="line">    console.log(&apos;---run----&apos;);</div><div class="line">  &#125;</div><div class="line">   </div><div class="line">   run();</div><div class="line">   window.run();</div><div class="line">   window.run();</div><div class="line">   window.run();</div><div class="line">   </div><div class="line">   console.log(age);</div><div class="line">   console.log(window.age);</div><div class="line">   // 把age变成局部变量</div><div class="line">    做出区别</div><div class="line">    </div><div class="line">    alert(&apos;10&apos;);</div><div class="line">    window.alert(&apos;10&apos;);</div><div class="line">    // 当前函数属于哪个对象，this就代表这个对象</div><div class="line">    function Dog()&#123;</div><div class="line">        console.log(this);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    Dog(); // window.dog</div><div class="line">    new Dog(); // 通过构造函数产生了一个新的对象，this代表这个狗对象</div><div class="line">    </div><div class="line">    </div><div class="line">    function Dog()&#123;</div><div class="line">       this.alter(&apos;10&apos;); //  </div><div class="line">    &#125;</div><div class="line">    Dog();</div><div class="line">    </div><div class="line">    new Dog();</div><div class="line">    </div><div class="line">    /////</div><div class="line">    var age = 20;</div><div class="line">    function Dog()&#123;</div><div class="line">        console.log(this.age);</div><div class="line">    &#125;</div><div class="line">    Dog();</div><div class="line">    new Dog();</div><div class="line">    </div><div class="line">    ////////</div><div class="line">    alter(&apos;10&apos;); // 阻塞操作</div><div class="line">    window.location.href = &apos;&apos;; // 通过这句代码改变浏览器的指向，实现用JS代码自动跳转；</div><div class="line">    location.herf = &apos;&apos;;</div><div class="line">   </div><div class="line">   总结笔记：</div><div class="line">    </div><div class="line">    掌握对象的函数调用：</div><div class="line">     var result = 对象.函数名(参数值);</div><div class="line">     </div><div class="line">### 2.内置对象 - window</div><div class="line">1&gt; window的特点</div><div class="line">   所有全局变量都是它的变量</div><div class="line">   所有全局函数都是它的函数</div><div class="line">2&gt; 通过JS代码动态跳转页面</div><div class="line">   location.href = &apos;http://www.baidu.com&apos;;</div><div class="line">   window.loction.href = &apos;http://www.baidu.com&apos;;</div></pre></td></tr></table></figure>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2014/06/21/05-UI控件/" style="float: left;">
-        ← 05-UI控件
+    <a class="pull-left" href="/2014/08/01/03-js语法-document/" style="float: left;">
+        ← 03-js语法-document
     </a>
     
     
-    <a class="pull-right" href="/2014/06/21/03-Foundation/">
-        03-Foundation →
+    <a class="pull-right" href="/2014/07/29/00-js语法-数据类型/">
+        00-js语法-数据类型 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2014/06/21/06-应用程序/" data-title="06-应用程序" data-url="http://yoursite.com/2014/06/21/06-应用程序/"></div>
+<div class="ds-thread" data-thread-key="2014/07/31/02-js语法-window/" data-title="02-js语法-window" data-url="http://yoursite.com/2014/07/31/02-js语法-window/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"dabenxie7"};
 (function() {
