@@ -531,7 +531,7 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/05-UI控件/">05-UI控件</a></h3>
+                    <h3><a href="/2014/06/21/08-其他/">08-其他</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -544,45 +544,13 @@ JS的绘图技术
                 <div class="col-md-8">
                     <p>
                       
-                        1.怎么解决缓存池满的问题(cell)ios中不存在缓存池满的情况，因为通常我们ios中开发，对象都是在需要的时候才会创建，有种常用的说话叫做懒加载，还有在UITableView中一般只会创建刚开始出现在屏幕中的cell，之后都是从缓存池里取，不会在创建新对象。缓存池里最多也就一两个对象，缓存池满的这种情况一般在开发java中比较常见，java中一般把最近最少使用的对象先释放。
-2.CAAnimation的层级结构
-3.UIButton
+                        1.客户端安全性处理方式？1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)2&gt;协议的问题(自定义协议, 游戏代练)3&gt;本地文件存储(游戏的存档)4&gt;源代码
+2.sip是什么？1&gt;SIP（Session Initiation Protocol），会话发起协议2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织3&gt;所谓VOIP，
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/05-UI控件/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
+                        <a href="/2014/06/21/08-其他/">更多...</a>
                     </p>
                     
                 </div>
@@ -657,37 +625,6 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
-2.SQLite数据存储是怎么用？1&gt;添加SQL
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/04-数据存储/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
                     <h3><a href="/2014/06/21/07-第三方框架/">06-07-第三方框架</a></h3>
                     <span>
                         <span class="post-meta">
@@ -720,7 +657,7 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/08-其他/">08-其他</a></h3>
+                    <h3><a href="/2014/06/21/04-数据存储/">04-数据存储</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -733,13 +670,77 @@ JS的绘图技术
                 <div class="col-md-8">
                     <p>
                       
-                        1.客户端安全性处理方式？1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)2&gt;协议的问题(自定义协议, 游戏代练)3&gt;本地文件存储(游戏的存档)4&gt;源代码
-2.sip是什么？1&gt;SIP（Session Initiation Protocol），会话发起协议2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织3&gt;所谓VOIP，
+                        1.如果后期需要增加数据库中的字段怎么实现，如果不使用CoreData呢？编写SQL语句来操作原来表中的字段1&gt;增加表字段ALTER TABLE 表名 ADD COLUMN 字段名 字段类型;2&gt;删除表字段ALTER TABLE 表名 DROP COLUMN 字段名;3&gt;修改表字段ALTER TABLE 表名 RENAME COLUMN 旧字段名 TO 新字段名;
+2.SQLite数据存储是怎么用？1&gt;添加SQL
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/08-其他/">更多...</a>
+                        <a href="/2014/06/21/04-数据存储/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
+2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/03-Foundation/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
+2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+
+声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/内存管理/">更多...</a>
                     </p>
                     
                 </div>
@@ -766,60 +767,12 @@ JS的绘图技术
 
       
 <!-- ============================ Footer =========================== -->
-<footer>
-    <div class="container">
+<footer >
+    <div class="container" background-color="red">
          <div class="copy">
-            <p>&copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 大笨鞋. All Rights Reserved.<script language="javascript" type="text/javascript" src="http://js.users.51.la/19039700.js"></script>
+            <p>&copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 大笨鞋. All Rights Reserved. <script language="javascript" type="text/javascript" src="http://js.users.51.la/19039700.js"></script>
 <noscript><a href="http://www.51.la/?19039700" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19039700.asp" style="border:none" /></a></noscript></p>
-<p>周玉坤的技术网站&#160;&#160; 版权所有 ,盗版必究，请尊重正版，感谢您的使用!</p><div class="col-md-2">
-                <h3>微信</h3>
-                <img src="http://www.php100.com/statics/images//php100/weixin_b.jpg" height="120"/>
-            </div>
-            <div class="col-md-8">
-                <h3>友情链接与合作伙伴</h3>
-                <ul class="list-inline ul-links">
-                                                            <li><a href="http://code4app.com/" title="iOS开发" target="_blank">iOS开发</a></li>
-                                        <li><a href="http://www.apkbus.com/" title="Android开发" target="_blank">Android开发</a></li>
-                                        <li><a href="http://www.codefans.net/" title="源码爱好者" target="_blank">源码爱好者</a></li>
-                                        <li><a href="http://www.fengniao.com" title="摄影" target="_blank">摄影</a></li>
-                                        <li><a href="http://www.knowsky.com/" title="动态网站制作" target="_blank">动态网站制作</a></li>
-                                        <li><a href="http://www.admin5.com" title="A5站长网" target="_blank">A5站长网</a></li>
-                                        <li><a href="http://www.win8china.com/" title="Win8之家" target="_blank">Win8之家</a></li>
-                                        <li><a href="http://download.pcpop.com" title="手机软件" target="_blank">手机软件</a></li>
-                                        <li><a href="http://app.hiapk.com/" title="安卓软件" target="_blank">安卓软件</a></li>
-                                        <li><a href="http://www.lagou.com/" title="招聘网" target="_blank">招聘网</a></li>
-                                        <li><a href="http://www.hicode.cn" title="大众源码" target="_blank">大众源码</a></li>
-                                        <li><a href="http://www.oschina.net/" title="开源中国" target="_blank">开源中国</a></li>
-                                        <li><a href="http://www.devstore.cn/" title="DevStore" target="_blank">DevStore</a></li>
-                                        <li><a href="http://www.zbj.com/" title="猪八戒威客网" target="_blank">猪八戒威客网</a></li>
-                                        <li><a href="http://www.woshipm.com" title="人人都是产品经理" target="_blank">人人都是产品经理</a></li>
-                                        <li><a href="http://www.tedu.cn/" title=" it培训" target="_blank"> it培训</a></li>
-                                        <li><a href="http://java.tedu.cn/" title=" java培训" target="_blank"> java培训</a></li>
-                                        <li><a href="http://www.apkbus.com/" title="安卓巴士" target="_blank">安卓巴士</a></li>
-                                        <li><a href="http://www.phpwind.net" title="PHPwind论坛" target="_blank">PHPwind论坛</a></li>
-                                        <li><a href="http://www.xinge.com/" title="信鸽" target="_blank">信鸽</a></li>
-                                        <li><a href="http://www.lampbrother.net/" title="兄弟连PHP培训" target="_blank">兄弟连PHP培训</a></li>
-                                        <li><a href="http://www.downkr.com/" title="当客软件园" target="_blank">当客软件园</a></li>
-                                        <li><a href="http://www.kuqin.com/" title="IT程序猿" target="_blank">IT程序猿</a></li>
-                                        <li><a href="http://www.111cn.net/" title="一聚教程" target="_blank">一聚教程</a></li>
-                                        <li><a href="http://www.yixieshi.com/" title="互联网的一些事" target="_blank">互联网的一些事</a></li>
-                                        <li><a href="http://www.xker.com/" title="新客网" target="_blank">新客网</a></li>
-                                        <li><a href="http://www.itheima.com/" title="黑马程序员" target="_blank">黑马程序员</a></li>
-                                        <li><a href="http://www.hxsd.com/" title="火星时代" target="_blank">火星时代</a></li>
-                                        <li><a href="http://info.gongchang.com/" title="工厂网资讯" target="_blank">工厂网资讯</a></li>
-                                        <li><a href="http://www.51testing.com/html/index.html" title="51软件测试网" target="_blank">51软件测试网</a></li>
-                                        <li><a href="http://baike.hao123.cn/it/ " title="hao123it" target="_blank">hao123it</a></li>
-                                        <li><a href="http://www.enkj.com/" title="亿恩科技" target="_blank">亿恩科技</a></li>
-                                        <li><a href="http://thinksns.com/" title="ThinkSNS" target="_blank">ThinkSNS</a></li>
-                                        <li><a href="http://www.9miao.com/" title="开源社区" target="_blank">开源社区</a></li>
-                                        <li><a href="http://www.huibo.com" title="重庆人才网" target="_blank">重庆人才网</a></li>
-                                        <li><a href="http://www.qy.com.cn" title="群英云服务器" target="_blank">群英云服务器</a></li>
-                                        <li><a href="http://edu.51cto.com/" title="51CTO学院" target="_blank">51CTO学院</a></li>
-
-                </ul>
-            </div>
-
-</div>
+<p>周玉坤的技术网站&#160;&#160; 版权所有 ,盗版必究，请尊重正版，感谢您的使用!</p></div>
             <div class="social">
                 <ul>
                     
