@@ -531,7 +531,7 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
+                    <h3><a href="/2014/06/21/06-应用程序/">06-应用程序</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -544,45 +544,14 @@ JS的绘图技术
                 <div class="col-md-8">
                     <p>
                       
-                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
-2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2014/06/21/03-Foundation/">更多...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2014/06/21/07-第三方框架/">06-07-第三方框架</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
-          2014-06-21
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.第三方API是怎么用的？1&gt;大公司的开放API2&gt;github上面别人发布的框架用第三方API在官方文档都有说明，按照官方文档的一步一步做参考官方提供的示例程序先自己创建一个工程试试，等熟悉了，在使用到项目中
-2.列举现在熟悉iOS开发库和第三方开发库？友盟（包括第三方登录和分享），高德地图，百度地图,AFN,SDWebimage,FMDB, MBProgressHUD等等
+                        1．NSRunLoop的实现机制,及在多线程中如何使用NSRunLoop是IOS消息机制的处理模式
 
+1.NSRunLoop的主要作用：控制NSRunLoop里面线程的执行和休眠，在有事情做的时候使当前NSRunLoop控制的线程工作，没有事情做让当前NSRunLoop的控制的线程休眠。2.NSRunLoop 就是一直在循环检测，从线程start到线程end，检测inputsource(如点击，双击等操作)异步事件，检测timesour
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/07-第三方框架/">更多...</a>
+                        <a href="/2014/06/21/06-应用程序/">更多...</a>
                     </p>
                     
                 </div>
@@ -688,7 +657,7 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/08-其他/">08-其他</a></h3>
+                    <h3><a href="/2014/06/21/07-第三方框架/">06-07-第三方框架</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -701,13 +670,14 @@ JS的绘图技术
                 <div class="col-md-8">
                     <p>
                       
-                        1.客户端安全性处理方式？1&gt;网络数据传输(敏感数据[账号\密码\消费数据\银行卡账号], 不能明文发送)2&gt;协议的问题(自定义协议, 游戏代练)3&gt;本地文件存储(游戏的存档)4&gt;源代码
-2.sip是什么？1&gt;SIP（Session Initiation Protocol），会话发起协议2&gt;SIP是建立VOIP连接的 IETF 标准，IETF是全球互联网最具权威的技术标准化组织3&gt;所谓VOIP，
+                        1.第三方API是怎么用的？1&gt;大公司的开放API2&gt;github上面别人发布的框架用第三方API在官方文档都有说明，按照官方文档的一步一步做参考官方提供的示例程序先自己创建一个工程试试，等熟悉了，在使用到项目中
+2.列举现在熟悉iOS开发库和第三方开发库？友盟（包括第三方登录和分享），高德地图，百度地图,AFN,SDWebimage,FMDB, MBProgressHUD等等
+
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/08-其他/">更多...</a>
+                        <a href="/2014/06/21/07-第三方框架/">更多...</a>
                     </p>
                     
                 </div>
@@ -719,7 +689,7 @@ JS的绘图技术
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2014/06/21/06-应用程序/">06-应用程序</a></h3>
+                    <h3><a href="/2014/06/21/03-Foundation/">03-Foundation</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
@@ -732,14 +702,46 @@ JS的绘图技术
                 <div class="col-md-8">
                     <p>
                       
-                        1．NSRunLoop的实现机制,及在多线程中如何使用NSRunLoop是IOS消息机制的处理模式
-
-1.NSRunLoop的主要作用：控制NSRunLoop里面线程的执行和休眠，在有事情做的时候使当前NSRunLoop控制的线程工作，没有事情做让当前NSRunLoop的控制的线程休眠。2.NSRunLoop 就是一直在循环检测，从线程start到线程end，检测inputsource(如点击，双击等操作)异步事件，检测timesour
+                        1.KVO内部实现原理1&gt;KVO是基于runtime机制实现的2&gt;当某个类的对象第一次被观察时， 系统就会在运行期动态地创建该类的一个派生类，在这个派生类中重写基类中任何被观察属性的 setter 方法。派生类在被重写的 setter 方法实现真正的通知机制（Person NSKVONotifying_Person）
+2.是否可以把比较耗时的操作放在NSNotificationCenter中如果在异步线程发的通知，那么可以执
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2014/06/21/06-应用程序/">更多...</a>
+                        <a href="/2014/06/21/03-Foundation/">更多...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2014/06/21/内存管理/">02-内存管理</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1.怎么保证多人开发进行内存泄露的检查.1&gt;使用Analyze进行代码的静态分析2&gt;为避免不必要的麻烦, 多人开发时尽量使用ARC
+2．非自动内存管理情况下怎么做单例模式.创建单例设计模式的基本步骤 ·
+
+声明一个单件对象的静态实例,并初始化为nil。创建一个类的类工厂方法,当且仅当这个类的实例为nil时生成一个该类的实例实现NScopying协议, 覆盖allocWithZone:方法,确保用户在直接分配和初始化对象时,不
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2014/06/21/内存管理/">更多...</a>
                     </p>
                     
                 </div>
@@ -770,7 +772,7 @@ JS的绘图技术
     <div class="container">
          <div class="copy">
             <p>&copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 大笨鞋. All Rights Reserved. <script language="javascript" type="text/javascript" src="http://js.users.51.la/19039700.js"></script>
-<noscript><a href="http://www.51.la/?19039700" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19039700.asp" style="border:none" /></a></noscript></p>
+<noscript><a href="http://www.51.la/?19039700" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19039700.asp" style="border:none" /></a></noscript>.<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260881544'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260881544%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script></p>
 <p>周玉坤的技术网站&#160;&#160; 版权所有 ,盗版必究，请尊重正版，感谢您的使用!</p></div>
             <div class="social">
                 <ul>
