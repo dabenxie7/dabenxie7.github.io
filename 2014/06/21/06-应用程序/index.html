@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>06-应用程序 | iOS|H5开发者站</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="iOS|H5开发者站">
+    <meta name="author" content="大笨鞋">
+    <meta name="description" content="站在巨人的肩膀看世界" />
+    <meta name="keywords" content="iOS开发教程 H5开发工具 iOS开发 安卓开发 iOS开发贴吧 iOS论坛  iOS开发语言" />
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a755249e1936fab43234f6197f086d49";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+    <link rel="alternate" href="/atom.xml" title="iOS|H5开发者站" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">主页</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">存档</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">作品<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="https://itunes.apple.com/cn/app/zhong-pin-hui/id1076231739?mt=8" target="_BLANK" class="animsition-link">众品会</a></li>
+                    
+                        <li><a href="https://itunes.apple.com/cn/app/xi-shua-shua-shuashua/id1001428642?mt=8" target="_BLANK" class="animsition-link">洗刷刷</a></li>
+                    
+                        <li><a href="https://itunes.apple.com/cn/app/ying-ren-quan/id919472651?mt=8" target="_BLANK" class="animsition-link">影人圈</a></li>
+                    
+                        <li><a href="https://itunes.apple.com/cn/app/withme-ji-lu-zhen-shi-sheng/id1042915899?mt=8" target="_BLANK" class="animsition-link">日记本</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">更多</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">友情链接<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://www.baidu.com/" class="animsition-link">百度</a></li>
+                    
+                    <li><a href="http://www.sina.com.cn/" class="animsition-link">新浪</a></li>
+                    
+                    <li><a href="http://www.google.cn/" class="animsition-link">谷歌</a></li>
+                    
+                    <li><a href="http://www.qq.com/" class="animsition-link">腾讯</a></li>
+                    
+                    <li><a href="http://www.iqiyi.com/" class="animsition-link">爱奇艺</a></li>
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">domain</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">关于</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">iOS|H5开发者站</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/dabenxie7" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/u/5241219064" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.zhihu.com/people/chen-yang-4-50-74" title="zhihu" target="_blank">知乎</a></li>
+                            
+                            
+                            <li><a href="http://user.qzone.qq.com/156517191" title="qzone" target="_blank">qq空间</a></li>
+                            
+                            
+                            <li><a href="https://wx.qq.com/" title="weixin" target="_blank">微信</a></li>
+                            
+                            
+                            <li><a href="http://maimai.cn/" title="maimai" target="_blank">脉脉</a></li>
+                            
+                            
+                            <li><a href="https://y.qq.com/portal/player.html" title="music" target="_blank">qq音乐</a></li>
+                            
+                            
+                            <li><a href="https://coding.net/u/dabenxie" title="coding" target="_blank">coding</a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">更多</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title=“更多”>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2014-06-21T08:07:31.000Z" itemprop="datePublished">
+          2014-06-21
+      </time>
+    
+</span>
+                <h1>06-应用程序</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1．NSRunLoop的实现机制,及在多线程中如何使用<br>NSRunLoop是IOS消息机制的处理模式</p>
+<blockquote>
+<p>1.NSRunLoop的主要作用：控制NSRunLoop里面线程的执行和休眠，在有事情做的时候使当前NSRunLoop控制的线程工作，没有事情做让当前NSRunLoop的控制的线程休眠。<br>2.NSRunLoop 就是一直在循环检测，从线程start到线程end，检测inputsource(如点击，双击等操作)异步事件，检测timesource同步事件，检测到输入源会执行处理函数，首先会产生通知，corefunction向线程添加runloop observers来监听事件，意在监听事件发生时来做处理。<br>3.runloopmode是一个集合，包括监听：事件源，定时器，以及需通知的runloop observers</p>
+<ol>
+<li>只有在为你的程序创建次线程的时候，才需要运行run loop。对于程序的主线程而言，run loop是关键部分。Cocoa提供了运行主线程run loop的代码同时也会自动运行run loop。IOS程序UIApplication中的run方法在程序正常启动的时候就会启动run loop。如果你使用xcode提供的模板创建的程序，那你永远不需要自己去启动run loop</li>
+<li>在多线程中，你需要判断是否需要run loop。如果需要run loop，那么你要负责配置run loop并启动。你不需要在任何情况下都去启动run loop。比如，你使用线程去处理一个预先定义好的耗时极长的任务时，你就可以毋需启动run loop。Run loop只在你要和线程有交互时才需要</li>
+</ol>
+</blockquote>
+<p>2．IOS7之前,后台执行内容有几种形式,都是什么<br>一般的应用在进入后台的时候可以获取一定时间来运行相关任务，也就是说可以在后台运行一小段时间(10S左右)。</p>
+<ol>
+<li>后台播放音乐</li>
+<li>后台GPS跟踪</li>
+<li>后台voip支持</li>
+</ol>
+<p>3简单说一下APP的启动过程,从main文件开始说起<br>    程序启动分为两类:1.有storyboard 2.没有storyboard<br>有storyboard情况下:<br>1.main函数<br>2.UIApplicationMain</p>
+<ul>
+<li>创建UIApplication对象</li>
+<li>创建UIApplication的delegate对象<br>3.根据Info.plist获得最主要storyboard的文件名,加载最主要的storyboard(有storyboard)</li>
+<li>创建UIWindow</li>
+<li>创建和设置UIWindow的rootViewController</li>
+<li>显示窗口</li>
+</ul>
+<p>没有storyboard情况下:<br>1.main函数<br>2.UIApplicationMain</p>
+<ul>
+<li>创建UIApplication对象</li>
+<li>创建UIApplication的delegate对象<br>3.delegate对象开始处理(监听)系统事件(没有storyboard)</li>
+<li>程序启动完毕的时候, 就会调用代理的application:didFinishLaunchingWithOptions:方法</li>
+<li>在application:didFinishLaunchingWithOptions:中创建UIWindow</li>
+<li>创建和设置UIWindow的rootViewController</li>
+<li>显示窗口</li>
+</ul>
+<p>4把程序自己关掉和程序进入后台,远程推送的区别</p>
+<ol>
+<li>关掉后不执行任何代码, 不能处理事件</li>
+<li>应用程序进入后台状态不久后转入挂起状态。在这种状态下，应用程序不执行任何代码，并有可能在任意时候从内存中删除。只有当用户再次运行此应用，应用才会从挂起状态唤醒，代码得以继续执行<br>3.或者进入后台时开启多任务状态，保留在内存中，这样就可以执行系统允许的动作<br>4.远程推送是由远程服务器上的程序发送到APNS,再由APNS把消息推送至设备上的程序,当应用程序收到推送的消息会自动调用特定的方法执行事先写好的代码</li>
+</ol>
+<p>5本地通知和远程推送通知对基本概念和用法？<br>    本地通知和远程推送通知都可以向不在前台运行的应用发送消息,这种消息既可能是即将发生的事件,也可能是服务器的新数据.不管是本地通知还是远程通知,他们在程序界面的显示效果相同,都可能显示为一段警告信息或应用程序图标上的微章.<br>    本地通知和远程推送通知的基本目的都是让应用程序能够通知用户某些事情, 而且不需要应用程序在前台运行.二者的区别在于本地通知由本应用负责调用,只能从当前设备上的iOS发出, 而远程通知由远程服务器上的程序发送到APNS,再由APNS把消息推送至设备上的程序</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2014/06/21/04-数据存储/" style="float: left;">
+        ← 04-数据存储
+    </a>
+    
+    
+    <a class="pull-right" href="/2014/06/21/07-第三方框架/">
+        06-07-第三方框架 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2014/06/21/06-应用程序/" data-title="06-应用程序" data-url="http://yoursite.com/2014/06/21/06-应用程序/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"dabenxie7"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+<footer>
+    <div class="container">
+         <div class="copy">
+            <p>&copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 大笨鞋. All Rights Reserved.<script language="javascript" type="text/javascript" src="http://js.users.51.la/19039700.js"></script>
+<noscript><a href="http://www.51.la/?19039700" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19039700.asp" style="border:none" /></a></noscript></p>
+<p>周玉坤的技术网站&#160;&#160; 版权所有 ,盗版必究，请尊重正版，感谢您的使用!</p></div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/dabenxie7" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/u/5241219064" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+<!-- ============================ END Footer =========================== -->
+
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+      <!-- Baidu统计 -->
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c71a239d451f8149ac6ebf67a0c992fa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+
+           <!-- Google 统计 -->
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63685503-1', 'auto');
+      ga('send', 'pageview');
+    });
+</script>
+
+</body>
+</html>
